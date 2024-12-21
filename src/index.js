@@ -1,4 +1,3 @@
-"use strict";
 const express = require("express");
 const bodyParser = require("body-parser");
 const connectToDB = require("./config/db.config");
@@ -25,5 +24,5 @@ app.use("/api", projectRoutes);
 
 app.listen(PORT, async () => {
   logger.info(`Server is listening on port ${PORT}`);
-  await connectToDB();
+  connectToDB();
 });
