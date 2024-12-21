@@ -19,10 +19,10 @@ app.use(
     allowedHeaders: "Content-Type, Authorization",
   })
 );
-app.get("/", (req, res) => {
-  console.log("Simplified API response");
-  res.status(200).json({ message: "API is working" });
-});
+// app.get("/", (req, res) => {
+//   console.log("Simplified API response");
+//   res.status(200).json({ message: "API is working" });
+// });
 app.use("/api", projectRoutes);
 
 app.listen(PORT, async () => {
