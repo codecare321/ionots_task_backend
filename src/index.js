@@ -14,12 +14,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const corsConfig = {
-  origin: "",
+  origin: "*",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
 };
-app.use(cors(corsConfig));
 app.options("", cors(corsConfig));
+app.use(cors(corsConfig));
 
 app.use("/api", projectRoutes);
 
