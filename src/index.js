@@ -24,5 +24,5 @@ app.use("/api", projectRoutes);
 
 app.listen(PORT, async () => {
   logger.info(`Server is listening on port ${PORT}`);
-  connectToDB();
+  await connectToDB();
 });
