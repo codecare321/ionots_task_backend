@@ -8,20 +8,12 @@
   ],
   "routes": [
     {
-      "src": "/api/projects/(.*)",
-      "dest": "/src/index.js"
-    },
-    {
-      "src": "/api/users/(.*)",
-      "dest": "/src/index.js"
-    },
-    {
-      "src": "/api/auth/(.*)",
-      "dest": "/src/index.js"
+      "src": "/api/(.*)",
+      "dest": "src/index.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/src/index.js"
+      "dest": "src/index.js"
     }
   ]
 }
