@@ -19,7 +19,7 @@ app.use(
     allowedHeaders: "Content-Type, Authorization",
   })
 );
-app.get("/api/v1/project/get/:id", (req, res) => {
+app.get("/", (req, res) => {
   console.log("Simplified API response");
   res.status(200).json({ message: "API is working" });
 });
